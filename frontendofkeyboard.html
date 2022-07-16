@@ -1,0 +1,900 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>keyboard</title>
+    <style>
+        body{
+            background-color: rgba(93, 93, 236, 0.382);
+        }
+        .container{
+            /* border: 10px solid red; */
+            margin: 160px 370px 0 200px ;
+            border-radius: 30px;
+            /* margin-right: 200px; */
+        }
+        .row{
+            width:100%;
+            height:60px;
+        }
+        .One,.Two,.Three,.four,.Five{
+            margin:  10px 0 0 0;
+        }
+        button{
+            /* color:red; */
+            border: none;
+            border-radius: 10px ;    
+            width:55px;
+            height:55px;
+            margin-left: 4px;
+            font-size: small;
+            font-weight: 900;
+            box-shadow:0 5px 0px 0 rgba(34, 36, 34, 0.774);
+        }
+        .back , .tab,.enter{
+            width:100px
+        }
+        .caps{
+            width:120px;
+        }
+        .shift1{
+            width:150px;
+        }
+        .shift{
+            width:133.5px
+        }
+        .control{
+            width:80px
+        }
+        .space{
+            width:390px;
+            font-weight: 900;
+            color: rgb(244, 240, 240);
+        }
+        .function1{
+            width:116px;
+        }
+        #window{
+            width:100px
+        }
+    </style>
+</head>
+<body>
+    <script></script>
+    <div class="container">
+    <div class="row One">
+        <button id="sign-btn">~</button>
+        <button id="ONE">1</button>
+        <button id="two">2</button>
+        <button id="three">3</button>
+        <button id="four">4</button>
+        <button id="five">5</button>
+        <button id="six">6</button>
+        <button id="seven">7</button>
+        <button id="eigth">8</button>
+        <button id="nine">9</button>
+        <button id="zero">0</button>
+        <button id="minus_sign">-</button>
+        <button id="equalTo">=</button>
+        <button class="back" id="backSpace_btn">backspace</button>
+    </div>
+
+    <div class="row Two">
+        <button class="tab" id="tab_btn">tab</button>
+        <button id="alphaQ">Q</button>
+        <button id="alphaW">W</button>
+        <button id="alphaE">E</button>
+        <button id="alphaR">R</button>
+        <button id="alphaT">T</button>
+        <button id="alphaY">Y</button>
+        <button id="alphaU">U</button>
+        <button id="alphaI">I</button>
+        <button id="alphaO">O</button>
+        <button id="alphaP">P</button>
+        <button id="charone">[</button>
+        <button id="chartwo">]</button>
+        <button id="charthree">\</button>
+    </div>
+
+    <div class="row Three">
+        <button class="caps" id="capsLock">caps lock </button>
+        <button id="alphaA">A</button>
+        <button id="alphaS">S</button>
+        <button id="alphaD">D</button>
+        <button id="alphaF">F</button>
+        <button id="alphaG" >G</button>
+        <button id="alphaH">H</button>
+        <button id="alphaJ">J</button>
+        <button id="alphaK">K</button>
+        <button id="alphaL">L</button>
+        <button id="charFour">;</button>
+        <button id="charFive">"</button>
+        <button class="enter" id="enter-btn">enter</button>
+    </div>
+
+    <div class="row Four">
+        <button class="shift1" id="shift-btn">shift</button>
+        <button id="alphaZ">Z</button>
+        <button id="alphaX">X</button>
+        <button id="alphaC">C</button>
+        <button id="alphaV">V</button>
+        <button id="alphaB">B</button>
+        <button id="alphaN">N</button>
+        <button id="alphaM">M</button>
+        <button id="lessthan"> &lt</button>
+        <button id="greatthan">&gt</button>
+        <button id="charSix">/</button>
+        <button class="shift" id="charSeven">shift</button>
+    </div>
+    <div class="row Five">
+        <button class="function1" id="control-btn">ctrl</button>
+        <button id="window">win</button>
+        <button class="control" id="walert">alt</button>
+        <button class="space" id="space-btn">jaswanth</button>
+        <button class="control" id="walert1">alt</button>
+        <button class="function1" id="control-btn1">ctrl</button>
+    </div>
+</div>
+<script>
+    var audio = new Audio("jack.mpeg") 
+    var audio1 = new Audio("harhar.mpeg")
+    var audio4 = new Audio("babyLoves.mpeg")
+    var audio2 = new Audio("jocker.mpeg")
+    var audio3 = new Audio("daddy.mpeg")
+    var audio5 = new Audio("kfgmom.mpeg")
+    var audio6 = new Audio("ntr.mpeg")
+    var audio7 = new Audio("old.mpeg")
+    var audio8 = new Audio("pikachu.mpeg")
+    var audio9 = new Audio("violin.mpeg")
+    var audio10 = new Audio("qwerty.mpeg")
+    var audio11 = new Audio("telusa.mpeg")
+    var audio12 = new Audio("relay.mpeg")
+    var audio13 = new Audio("matser.mpeg")
+    var audio14 = new Audio("bgm.mpeg")
+    var audio15 = new Audio("andharu.mpeg")
+    var audio16 = new Audio("arabric.mpeg")
+    var audio17 = new Audio("bangara.mpeg")
+    var audio18 = new Audio("bustera.mpeg")
+    var audio19 = new Audio("buttam.mpeg")
+    var audio20 = new Audio("cukala.mpeg")
+    var audio21 = new Audio("djtillu.mpeg")
+    var audio22 = new Audio("dukudu.mpeg")
+    var audio23 = new Audio("ganumadiri.mpeg")
+    var audio24 = new Audio("genda.mpeg")
+    var audio25 = new Audio("google.mpeg")
+    var audio26 = new Audio("idontknow.mpeg")
+    var audio27 = new Audio("janata.mpeg")
+    var audio28 = new Audio("ladu.mpeg")
+    var audio29 = new Audio("lut.mpeg")
+    var audio30 = new Audio("mainedhoo.mpeg")
+    var audio31 = new Audio("naakala.mpeg")
+    var audio32 = new Audio("naik.mpeg")
+    var audio33 = new Audio("ooanthava.mpeg")
+    var audio34 = new Audio("pagal1.mpeg")
+    var audio35 = new Audio("pisa.mpeg")
+    var audio36 = new Audio("pokiri.mpeg")
+    var audio37 = new Audio("raataan.mpeg")
+    var audio38 = new Audio("ranuranu.mpeg")
+    var audio39 = new Audio("saraga.mpeg")
+    var audio40 = new Audio("surya.mpeg")
+    var audio41 = new Audio("veyira.mpeg")
+    var audio42 = new Audio("babaydoll.mpeg")
+    var audio43 = new Audio("cheez.mpeg")
+    var audio44 = new Audio("chitti.mpeg")
+    var audio45 = new Audio("fevicol.mpeg")
+    var audio46 = new Audio("jwala.mpeg")
+    var audio47 = new Audio("ohh.mpeg")
+    var audio48 = new Audio("pakka.mpeg")
+    var audio49 = new Audio("rani.mpeg")
+    var audio50 = new Audio("rowdy.mpeg")
+    var audio51 = new Audio("vasthava.mpeg")
+    var audio52 = new Audio("krack.mpeg")
+    var audio53 = new Audio("zingaat.mpeg")
+    var audio54 = new Audio("padoosi.mpeg")
+    var audio55 = new Audio("tumari.mpeg")
+    document.body.addEventListener('keydown',function(e){
+        var keycode = e.keyCode
+        switch(keycode){
+            case 13:
+            document.getElementById("enter-btn").style.backgroundColor= "green"
+            document.getElementById("enter-btn").style.boxShadow="0 3px 15px 0 rgb(244, 240, 240)"
+            document.getElementById("enter-btn").style.border ="6px solid red"
+            audio.play()
+            console.log(keycode+ "clicked");
+            break;
+            case 32:
+            document.getElementById("space-btn").style.backgroundColor= "green"
+            document.getElementById("space-btn").style.boxShadow="0 3px 15px 0 rgb(244, 240, 240)"
+            document.getElementById("space-btn").style.border ="6px solid red"
+            audio1.play()
+            console.log(keycode+ "clicked");
+            break;
+        
+            case 17:
+            document.getElementById("control-btn").style.backgroundColor= "green"
+            document.getElementById("control-btn").style.boxShadow="0 3px 15px 0 rgb(244, 240, 240)"
+            document.getElementById("control-btn").style.border ="6px solid red"
+            document.getElementById("control-btn1").style.backgroundColor ="green"
+            document.getElementById("control-btn1").style.border ="6px solid red"
+            audio2.play()
+            break;
+            case 20:
+            document.getElementById("capsLock").style.backgroundColor= "green"
+            document.getElementById("capsLock").style.boxShadow="0 3px 15px 0 rgb(244, 240, 240)"
+            document.getElementById("capsLock").style.border ="6px solid red"
+            audio3.play()
+            break;
+            case 192:
+            document.getElementById("sign-btn").style.backgroundColor= "green"
+            document.getElementById("sign-btn").style.boxShadow="0 3px 15px 0 rgb(244, 240, 240)"
+            document.getElementById("sign-btn").style.border ="6px solid red"
+            audio4.play()
+            break;
+            case 16:
+            document.getElementById("shift-btn").style.backgroundColor= "green"
+            document.getElementById("charSeven").style.backgroundColor ="green"
+            document.getElementById("shift-btn").style.boxShadow="0 3px 15px 0 rgb(244, 240, 240)"
+            document.getElementById("shift-btn").style.border ="6px solid red"
+            document.getElementById("charSeven").style.border = "6px solid red"
+            audio5.play()
+            break;
+            case 91:
+            document.getElementById("window").style.backgroundColor= "green"
+            document.getElementById("window").style.boxShadow="0 3px 15px 0 rgb(244, 240, 240)"
+            document.getElementById("window").style.border ="6px solid red"
+            audio6.play()
+            break;
+            case 18:
+            document.getElementById("walert").style.backgroundColor= "green"
+            document.getElementById("walert").style.boxShadow="0 3px 15px 0 rgb(244, 240, 240)"
+            document.getElementById("walert").style.border ="6px solid red"
+            document.getElementById("walert1").style.backgroundColor= "green"
+            document.getElementById("walert1").style.border ="6px solid red"
+            audio7.play()
+            break;
+            case 49:
+            document.getElementById("ONE").style.backgroundColor= "green"
+            document.getElementById("ONE").style.boxShadow="0 3px 15px 0 rgb(244, 240, 240)"
+            document.getElementById("ONE").style.border ="6px solid red"
+            audio8.play()
+            break;
+            case 50:
+            document.getElementById("two").style.backgroundColor= "green"
+            document.getElementById("two").style.boxShadow="0 3px 15px 0 rgb(244, 240, 240)"
+            document.getElementById("two").style.border ="6px solid red"
+            audio9.play()
+            break;
+            case 51:
+            document.getElementById("three").style.backgroundColor= "green"
+            document.getElementById("three").style.boxShadow="0 3px 15px 0 rgb(244, 240, 240)"
+            document.getElementById("three").style.border ="6px solid red"
+            audio10.play()
+            break;
+            case 52:
+            document.getElementById("four").style.backgroundColor= "green"
+            document.getElementById("four").style.boxShadow="0 3px 15px 0 rgb(244, 240, 240)"
+            document.getElementById("four").style.border ="6px solid red"
+            audio11.play()
+            break;
+            case 53:
+            document.getElementById("five").style.backgroundColor= "green"
+            document.getElementById("five").style.boxShadow="0 3px 15px 0 rgb(244, 240, 240)"
+            document.getElementById("five").style.border ="6px solid red"
+            audio12.play()
+            break;
+            case 54:
+            document.getElementById("six").style.backgroundColor= "green"
+            document.getElementById("six").style.boxShadow="0 3px 15px 0 rgb(244, 240, 240)"
+            document.getElementById("six").style.border ="6px solid red"
+            audio13.play()
+            break;
+            case 55:
+            document.getElementById("seven").style.backgroundColor= "green"
+            document.getElementById("seven").style.boxShadow="0 3px 15px 0 rgb(244, 240, 240)"
+            document.getElementById("seven").style.border ="6px solid red"
+            audio14.play()
+            break;
+            case 56:
+            document.getElementById("eigth").style.backgroundColor= "green"
+            document.getElementById("eigth").style.boxShadow="0 3px 15px 0 rgb(244, 240, 240)"
+            document.getElementById("eigth").style.border ="6px solid red"
+            audio15.play()
+            break;
+            case 57:
+            document.getElementById("nine").style.backgroundColor= "green"
+            document.getElementById("nine").style.boxShadow="0 3px 15px 0 rgb(244, 240, 240)"
+            document.getElementById("nine").style.border ="6px solid red"
+            audio16.play()
+            break;
+            case 48:
+            document.getElementById("zero").style.backgroundColor= "green"
+            document.getElementById("zero").style.boxShadow="0 3px 15px 0 rgb(244, 240, 240)"
+            document.getElementById("zero").style.border ="6px solid red"
+            audio17.play()
+            break;
+            case 189:
+            document.getElementById("minus_sign").style.backgroundColor= "green"
+            document.getElementById("minus_sign").style.boxShadow="0 3px 15px 0 rgb(244, 240, 240)"
+            document.getElementById("minus_sign").style.border ="6px solid red"
+            audio18.play()
+            break;
+            case 187:
+            document.getElementById("equalTo").style.backgroundColor= "green"
+            document.getElementById("equalTo").style.boxShadow="0 3px 15px 0 rgb(244, 240, 240)"
+            document.getElementById("equalTo").style.border ="6px solid red"
+            audio19.play()
+            break;
+            case 8:
+            document.getElementById("backSpace_btn").style.backgroundColor= "green"
+            document.getElementById("backSpace_btn").style.boxShadow="0 3px 15px 0 rgb(244, 240, 240)"
+            document.getElementById("backSpace_btn").style.border ="6px solid red"
+            audio20.play()
+            break;
+            case 9:
+            document.getElementById("tab_btn").style.backgroundColor= "green"
+            document.getElementById("tab_btn").style.boxShadow="0 3px 15px 0 rgb(244, 240, 240)"
+            document.getElementById("tab_btn").style.border ="6px solid red"
+            audio21.play()
+            break;
+            case 81:
+            document.getElementById("alphaQ").style.backgroundColor= "green"
+            document.getElementById("alphaQ").style.boxShadow="0 3px 15px 0 rgb(244, 240, 240)"
+            document.getElementById("alphaQ").style.border ="6px solid red"
+            audio22.play()
+            break;
+            case 87:
+            document.getElementById("alphaW").style.backgroundColor= "green"
+            document.getElementById("alphaW").style.boxShadow="0 3px 15px 0 rgb(244, 240, 240)"
+            document.getElementById("alphaW").style.border ="6px solid red"
+            audio23.play()
+            break;
+            case 69:
+            document.getElementById("alphaE").style.backgroundColor= "green"
+            document.getElementById("alphaE").style.boxShadow="0 3px 15px 0 rgb(244, 240, 240)"
+            document.getElementById("alphaE").style.border ="6px solid red"
+            audio24.play()
+            break;
+            case 82:
+            document.getElementById("alphaR").style.backgroundColor= "green"
+            document.getElementById("alphaR").style.boxShadow="0 3px 15px 0 rgb(244, 240, 240)"
+            document.getElementById("alphaR").style.border ="6px solid red"
+            audio25.play()
+            break;
+            case 84:
+            document.getElementById("alphaT").style.backgroundColor= "green"
+            document.getElementById("alphaT").style.boxShadow="0 3px 15px 0 rgb(244, 240, 240)"
+            document.getElementById("alphaT").style.border ="6px solid red"
+            audio26.play()
+            break;
+            case 85:
+            document.getElementById("alphaU").style.backgroundColor= "green"
+            document.getElementById("alphaU").style.boxShadow="0 3px 15px 0 rgb(244, 240, 240)"
+            document.getElementById("alphaU").style.border ="6px solid red"
+            audio27.play()
+            break;
+            case 89:
+            document.getElementById("alphaY").style.backgroundColor= "green"
+            document.getElementById("alphaY").style.boxShadow="0 3px 15px 0 rgb(244, 240, 240)"
+            document.getElementById("alphaY").style.border ="6px solid red"
+            audio28.play()
+            break;
+            case 73:
+            document.getElementById("alphaI").style.backgroundColor= "green"
+            document.getElementById("alphaI").style.boxShadow="0 3px 15px 0 rgb(244, 240, 240)"
+            document.getElementById("alphaI").style.border ="6px solid red"
+            audio29.play()
+            break;
+            case 79:
+            document.getElementById("alphaO").style.backgroundColor= "green"
+            document.getElementById("alphaO").style.boxShadow="0 3px 15px 0 rgb(244, 240, 240)"
+            document.getElementById("alphaO").style.border ="6px solid red"
+            audio30.play()
+            break
+            case 80:
+            document.getElementById("alphaP").style.backgroundColor= "green"
+            document.getElementById("alphaP").style.boxShadow="0 3px 15px 0 rgb(244, 240, 240)"
+            document.getElementById("alphaP").style.border ="6px solid red"
+            audio55.play()
+            break;
+            case 219:
+            document.getElementById("charone").style.backgroundColor= "green"
+            document.getElementById("charone").style.boxShadow="0 3px 15px 0 rgb(244,    240, 240)"
+            document.getElementById("charone").style.border ="6px solid red"
+            audio31.play()
+            break;
+            case 221:
+            document.getElementById("chartwo").style.backgroundColor= "green"
+            document.getElementById("chartwo").style.boxShadow="0 3px 15px 0 rgb(244, 240, 240)"
+            document.getElementById("chartwo").style.border ="6px solid red"
+            audio32.play()
+            break;
+            case 220:
+            document.getElementById("charthree").style.backgroundColor= "green"
+            document.getElementById("charthree").style.boxShadow="0 3px 15px 0 rgb(244, 240, 240)"
+            document.getElementById("charthree").style.border ="6px solid red"
+            audio33.play()
+            break;
+            case 65:
+            document.getElementById("alphaA").style.backgroundColor= "green"
+            document.getElementById("alphaA").style.boxShadow="0 3px 15px 0 rgb(244, 240, 240)"
+            document.getElementById("alphaA").style.border ="6px solid red"
+            audio34.play()
+            break;
+            case 83:
+            document.getElementById("alphaS").style.backgroundColor= "green"
+            document.getElementById("alphaS").style.boxShadow="0 3px 15px 0 rgb(244, 240, 240)"
+            document.getElementById("alphaS").style.border ="6px solid red"
+            audio35.play()
+            break;
+            case 68:
+            document.getElementById("alphaD").style.backgroundColor= "green"
+            document.getElementById("alphaD").style.boxShadow="0 3px 15px 0 rgb(244, 240, 240)"
+            document.getElementById("alphaD").style.border ="6px solid red"
+            audio36.play()
+            break;
+            case 70:
+            document.getElementById("alphaF").style.backgroundColor= "green"
+            document.getElementById("alphaF").style.boxShadow="0 3px 15px 0 rgb(244, 240, 240)"
+            document.getElementById("alphaF").style.border ="6px solid red"
+            audio37.play()
+            break;
+            case 71:
+            document.getElementById("alphaG").style.backgroundColor= "green"
+            document.getElementById("alphaG").style.boxShadow="0 3px 15px 0 rgb(244, 240, 240)"
+            document.getElementById("alphaG").style.border ="6px solid red"
+            audio38.play()
+            break;
+            case 72:
+            document.getElementById("alphaH").style.backgroundColor= "green"
+            document.getElementById("alphaH").style.boxShadow="0 3px 15px 0 rgb(244, 240, 240)"
+            document.getElementById("alphaH").style.border ="6px solid red"
+            audio39.play()
+            break;
+            case 74:
+            document.getElementById("alphaJ").style.backgroundColor= "green"
+            document.getElementById("alphaJ").style.boxShadow="0 3px 15px 0 rgb(244, 240, 240)"
+            document.getElementById("alphaJ").style.border ="6px solid red"
+            audio40.play()
+            break;
+            case 75:
+            document.getElementById("alphaK").style.backgroundColor= "green"
+            document.getElementById("alphaK").style.boxShadow="0 3px 15px 0 rgb(244, 240, 240)"
+            document.getElementById("alphaK").style.border ="6px solid red"
+            audio41.play()
+            break;
+            case 76:
+            document.getElementById("alphaL").style.backgroundColor= "green"
+            document.getElementById("alphaL").style.boxShadow="0 3px 15px 0 rgb(244, 240, 240)"
+            document.getElementById("alphaL").style.border ="6px solid red"
+            audio42.play()
+            break;
+            case 186:
+            document.getElementById("charFour").style.backgroundColor= "green"
+            document.getElementById("charFour").style.boxShadow="0 3px 15px 0 rgb(244, 240, 240)"
+            document.getElementById("charFour").style.border ="6px solid red"
+            audio43.play()
+            break;
+            case 222:
+            document.getElementById("charFive").style.backgroundColor= "green"
+            document.getElementById("charFive").style.boxShadow="0 3px 15px 0 rgb(244, 240, 240)"
+            document.getElementById("charFive").style.border ="6px solid red"
+            audio44.play()
+            break;
+            case 90:
+            document.getElementById("alphaZ").style.backgroundColor= "green"
+            document.getElementById("alphaZ").style.boxShadow="0 3px 15px 0 rgb(244, 240, 240)"
+            document.getElementById("alphaZ").style.border ="6px solid red"
+            audio45.play()
+            break;
+            case 88:
+            document.getElementById("alphaX").style.backgroundColor= "green"
+            document.getElementById("alphaX").style.boxShadow="0 3px 15px 0 rgb(244, 240, 240)"
+            document.getElementById("alphaX").style.border ="6px solid red"
+            audio46.play()
+            break;
+            case 67:
+            document.getElementById("alphaC").style.backgroundColor= "green"
+            document.getElementById("alphaC").style.boxShadow="0 3px 15px 0 rgb(244, 240, 240)"
+            document.getElementById("alphaC").style.border ="6px solid red"
+            audio47.play()
+            break;
+            case 86:
+            document.getElementById("alphaV").style.backgroundColor= "green"
+            document.getElementById("alphaV").style.boxShadow="0 3px 15px 0 rgb(244, 240, 240)"
+            document.getElementById("alphaV").style.border ="6px solid red"
+            audio48.play()
+            break;
+            case 66:
+            document.getElementById("alphaB").style.backgroundColor= "green"
+            document.getElementById("alphaB").style.boxShadow="0 3px 15px 0 rgb(244, 240, 240)"
+            document.getElementById("alphaB").style.border ="6px solid red"
+            audio49.play()
+            break;
+            case 78:
+            document.getElementById("alphaN").style.backgroundColor= "green"
+            document.getElementById("alphaN").style.boxShadow="0 3px 15px 0 rgb(244, 240, 240)"
+            document.getElementById("alphaN").style.border ="6px solid red"
+            audio50.play()
+            break;
+            case 77:
+            document.getElementById("alphaM").style.backgroundColor= "green"
+            document.getElementById("alphaM").style.boxShadow="0 3px 15px 0 rgb(244, 240, 240)"
+            document.getElementById("alphaM").style.border ="6px solid red"
+            audio51.play()
+            break;
+            case 188:
+            document.getElementById("lessthan").style.backgroundColor= "green"
+            document.getElementById("lessthan").style.boxShadow="0 3px 15px 0 rgb(244, 240, 240)"
+            document.getElementById("lessthan").style.border ="6px solid red"
+            audio52.play()
+            break;
+            case 190:
+            document.getElementById("greatthan").style.backgroundColor= "green"
+            document.getElementById("greatthan").style.boxShadow="0 3px 15px 0 rgb(244, 240, 240)"
+            document.getElementById("greatthan").style.border ="6px solid red"
+            audio53.play()
+            break;
+            case 191:
+            document.getElementById("charSix").style.backgroundColor= "green"
+            document.getElementById("charSix").style.boxShadow="0 3px 15px 0 rgb(244, 240, 240)"
+            document.getElementById("charSix").style.border ="6px solid red"
+            audio54.play()
+            break;        
+        }
+    });
+    document.body.addEventListener('keyup',function(e){
+        var keycode = e.keyCode
+        switch(keycode){
+            case 13:
+            document.getElementById("enter-btn").style.backgroundColor= "white"
+            document.getElementById("enter-btn").style.boxShadow="0 8px 0px 0 rgba(45, 47, 43, 0.588)"
+            document.getElementById("enter-btn").style.border ="none"
+            audio.pause()
+            console.log(keycode+ "clicked relesed");
+            break;
+            case 32:
+            document.getElementById("space-btn").style.backgroundColor= "white"
+            document.getElementById("space-btn").style.boxShadow="0 8px 0px 0 rgba(45, 47, 43, 0.588)"
+            document.getElementById("space-btn").style.border ="none"
+
+            audio1.pause()
+            console.log(keycode+ "clicked relesed");
+            break;
+            case 17:
+            document.getElementById("control-btn").style.backgroundColor= "white"
+            document.getElementById("control-btn").style.boxShadow="0 8px 0px 0 rgba(45, 47, 43, 0.588)"
+            document.getElementById("control-btn").style.border ="none"
+            document.getElementById("control-btn1").style.backgroundColor="white"
+            document.getElementById("control-btn1").style.border ="none"
+            audio2.pause()
+            break;
+            case 20:
+            document.getElementById("capsLock").style.backgroundColor= "white"
+            document.getElementById("capsLock").style.boxShadow="0 8px 0px 0 rgba(45, 47, 43, 0.588)"
+            document.getElementById("capsLock").style.border ="none"
+            audio3.pause()
+            break;
+            case 192:
+            document.getElementById("sign-btn").style.backgroundColor= "white"
+            document.getElementById("sign-btn").style.boxShadow="0 8px 0px 0 rgba(45, 47, 43, 0.588)"
+            document.getElementById("sign-btn").style.border ="none"
+            audio4.pause()
+            break;
+            case 16:
+            document.getElementById("shift-btn").style.backgroundColor= "white"
+            document.getElementById("charSeven").style.backgroundColor = "white"
+            document.getElementById("shift-btn").style.boxShadow="0 8px 0px 0 rgba(45, 47, 43, 0.588)"
+            document.getElementById("shift-btn").style.border ="none"
+            document.getElementById("charSeven").style.border ="none"
+            audio5.pause()
+            break;
+            case 91:
+            document.getElementById("window").style.backgroundColor= "white"
+            document.getElementById("window").style.boxShadow="0 8px 0px 0 rgba(45, 47, 43, 0.588)"
+            document.getElementById("window").style.border ="none"
+            audio6.pause()
+            break;
+            case 18:
+            document.getElementById("walert").style.backgroundColor= "white"
+            document.getElementById("walert").style.boxShadow="0 8px 0px 0 rgba(45, 47, 43, 0.588)"
+            document.getElementById("walert").style.border ="none"
+            document.getElementById("walert1").style.border ="none"
+            document.getElementById("walert1").style.backgroundColor="white"
+            audio7.pause()
+            break;
+            case 49:
+            document.getElementById("ONE").style.backgroundColor= "white"
+            document.getElementById("ONE").style.boxShadow="0 8px 0px 0 rgba(45, 47, 43, 0.588)"
+            document.getElementById("ONE").style.border ="none"
+            audio8.pause()
+            break;
+            case 50:
+            document.getElementById("two").style.backgroundColor= "white"
+            document.getElementById("two").style.boxShadow="0 8px 0px 0 rgba(45, 47, 43, 0.588)"
+            document.getElementById("two").style.border ="none"
+            audio9.pause()
+            break;
+            case 51:
+            document.getElementById("three").style.backgroundColor= "white"
+            document.getElementById("three").style.boxShadow="0 8px 0px 0 rgba(45, 47, 43, 0.588)"
+            document.getElementById("three").style.border ="none"
+            audio10.pause()
+            break;
+            case 52:
+            document.getElementById("four").style.backgroundColor= "white"
+            document.getElementById("four").style.boxShadow="0 8px 0px 0 rgba(45, 47, 43, 0.588)"
+            document.getElementById("four").style.border ="none"
+            audio11.pause()
+            break;
+            case 53:
+            document.getElementById("five").style.backgroundColor= "white"
+            document.getElementById("five").style.boxShadow="0 8px 0px 0 rgba(45, 47, 43, 0.588)"
+            document.getElementById("five").style.border ="none"
+            audio12.pause()
+            break;
+            case 54:
+            document.getElementById("six").style.backgroundColor= "white"
+            document.getElementById("six").style.boxShadow="0 8px 0px 0 rgba(45, 47, 43, 0.588)"
+            document.getElementById("six").style.border ="none"
+            audio13.pause()
+            break;
+            case 55:
+            document.getElementById("seven").style.backgroundColor= "white"
+            document.getElementById("seven").style.boxShadow="0 8px 0px 0 rgba(45, 47, 43, 0.588)"
+            document.getElementById("seven").style.border ="none"
+            audio14.pause()
+            break;
+            case 56:
+            document.getElementById("eigth").style.backgroundColor= "white"
+            document.getElementById("eigth").style.boxShadow="0 8px 0px 0 rgba(45, 47, 43, 0.588)"
+            document.getElementById("eigth").style.border ="none"
+            audio15.pause()
+            break;
+            case 57:
+            document.getElementById("nine").style.backgroundColor= "white"
+            document.getElementById("nine").style.boxShadow="0 8px 0px 0 rgba(45, 47, 43, 0.588)"
+            document.getElementById("nine").style.border ="none"
+            audio16.pause()
+            break;
+            case 48:
+            document.getElementById("zero").style.backgroundColor= "white"
+            document.getElementById("zero").style.boxShadow="0 8px 0px 0 rgba(45, 47, 43, 0.588)"
+            document.getElementById("zero").style.border ="none"
+            audio17.pause()
+            break;
+            case 189:
+            document.getElementById("minus_sign").style.backgroundColor= "white"
+            document.getElementById("minus_sign").style.boxShadow="0 8px 0px 0 rgba(45, 47, 43, 0.588)"
+            document.getElementById("minus_sign").style.border ="none"
+            audio18.pause()
+            break;
+            case 187:
+            document.getElementById("equalTo").style.backgroundColor= "white"
+            document.getElementById("equalTo").style.boxShadow="0 8px 0px 0 rgba(45, 47, 43, 0.588)"
+            document.getElementById("equalTo").style.border ="none"
+            audio19.pause()
+            break;
+            case 8:
+            document.getElementById("backSpace_btn").style.backgroundColor= "white"
+            document.getElementById("backSpace_btn").style.boxShadow="0 8px 0px 0 rgba(45, 47, 43, 0.588)"
+            document.getElementById("backSpace_btn").style.border ="none"
+            audio20.pause()
+            break;
+            case 9:
+            document.getElementById("tab_btn").style.backgroundColor= "white"
+            document.getElementById("tab_btn").style.boxShadow="0 8px 0px 0 rgba(45, 47, 43, 0.588)"
+            document.getElementById("tab_btn").style.border ="none"
+            audio21.pause()
+            break;
+            case 81:
+            document.getElementById("alphaQ").style.backgroundColor= "white"
+            document.getElementById("alphaQ").style.boxShadow="0 8px 0px 0 rgba(45, 47, 43, 0.588)"
+            document.getElementById("alphaQ").style.border ="none"
+            audio22.pause()
+            break;
+            case 87:
+            document.getElementById("alphaW").style.backgroundColor= "white"
+            document.getElementById("alphaW").style.boxShadow="0 8px 0px 0 rgba(45, 47, 43, 0.588)"
+            document.getElementById("alphaW").style.border ="none"
+            audio23.pause()
+            break
+            case 69:
+            document.getElementById("alphaE").style.backgroundColor= "white"
+            document.getElementById("alphaE").style.boxShadow="0 8px 0px 0 rgba(45, 47, 43, 0.588)"
+            document.getElementById("alphaE").style.border ="none"
+            audio24.pause()
+            break
+            case 82:
+            document.getElementById("alphaR").style.backgroundColor= "white"
+            document.getElementById("alphaR").style.boxShadow="0 8px 0px 0 rgba(45, 47, 43, 0.588)"
+            document.getElementById("alphaR").style.border ="none"
+            audio25.pause()
+            break
+            case 84:
+            document.getElementById("alphaT").style.backgroundColor= "white"
+            document.getElementById("alphaT").style.boxShadow="0 8px 0px 0 rgba(45, 47, 43, 0.588)"
+            document.getElementById("alphaT").style.border ="none"
+            audio26.pause()
+            break
+            case 85:
+            document.getElementById("alphaU").style.backgroundColor= "white"
+            document.getElementById("alphaU").style.boxShadow="0 8px 0px 0 rgba(45, 47, 43, 0.588)"
+            document.getElementById("alphaU").style.border ="none"
+            audio27.pause()
+            break
+            case 89:
+            document.getElementById("alphaY").style.backgroundColor= "white"
+            document.getElementById("alphaY").style.boxShadow="0 8px 0px 0 rgba(45, 47, 43, 0.588)"
+            document.getElementById("alphaY").style.border ="none"
+            audio28.pause()
+            break
+            case 73:
+            document.getElementById("alphaI").style.backgroundColor= "white"
+            document.getElementById("alphaI").style.boxShadow="0 8px 0px 0 rgba(45, 47, 43, 0.588)"
+            document.getElementById("alphaI").style.border ="none"
+            audio29.pause()
+            break;
+            case 79:
+            document.getElementById("alphaO").style.backgroundColor= "white"
+            document.getElementById("alphaO").style.boxShadow="0 8px 0px 0 rgba(45, 47, 43, 0.588)"
+            document.getElementById("alphaO").style.border ="none"
+            audio30.pause()
+            break;
+            case 80:
+            document.getElementById("alphaP").style.backgroundColor= "white"
+            document.getElementById("alphaP").style.boxShadow="0 8px 0px 0 rgba(45, 47, 43, 0.588)"
+            document.getElementById("alphaP").style.border ="none"
+            audio55.pause()
+            break;
+            case 219:
+            document.getElementById("charone").style.backgroundColor= "white"
+            document.getElementById("charone").style.boxShadow="0 8px 0px 0 rgba(45, 47, 43, 0.588)"
+            document.getElementById("charone").style.border ="none"
+            audio31.pause()
+            break
+            case 221:
+            document.getElementById("chartwo").style.backgroundColor= "white"
+            document.getElementById("chartwo").style.boxShadow="0 8px 0px 0 rgba(45, 47, 43, 0.588)"
+            document.getElementById("chartwo").style.border ="none"
+            audio32.pause()
+            break;
+            case 220:
+            document.getElementById("charthree").style.backgroundColor= "white"
+            document.getElementById("charthree").style.boxShadow="0 8px 0px 0 rgba(45, 47, 43, 0.588)"
+            document.getElementById("charthree").style.border ="none"
+            audio33.pause()
+            break
+            case 65:
+            document.getElementById("alphaA").style.backgroundColor= "white"
+            document.getElementById("alphaA").style.boxShadow="0 8px 0px 0 rgba(45, 47, 43, 0.588)"
+            document.getElementById("alphaA").style.border ="none"
+            audio34.pause()
+            break
+            case 83:
+            document.getElementById("alphaS").style.backgroundColor= "white"
+            document.getElementById("alphaS").style.boxShadow="0 8px 0px 0 rgba(45, 47, 43, 0.588)"
+            document.getElementById("alphaS").style.border ="none"
+            audio35.pause()
+            break
+            case 68:
+            document.getElementById("alphaD").style.backgroundColor= "white"
+            document.getElementById("alphaD").style.boxShadow="0 8px 0px 0 rgba(45, 47, 43, 0.588)"
+            document.getElementById("alphaD").style.border ="none"
+            audio36.pause()
+            break
+            case 70:
+            document.getElementById("alphaF").style.backgroundColor= "white"
+            document.getElementById("alphaF").style.boxShadow="0 8px 0px 0 rgba(45, 47, 43, 0.588)"
+            document.getElementById("alphaF").style.border ="none"
+            audio37.pause()
+            break
+            case 71:
+            document.getElementById("alphaG").style.backgroundColor= "white"
+            document.getElementById("alphaG").style.boxShadow="0 8px 0px 0 rgba(45, 47, 43, 0.588)"
+            document.getElementById("alphaG").style.border ="none"
+            audio38.pause()
+            break
+            case 72:
+            document.getElementById("alphaH").style.backgroundColor= "white"
+            document.getElementById("alphaH").style.boxShadow="0 8px 0px 0 rgba(45, 47, 43, 0.588)"
+            document.getElementById("alphaH").style.border ="none"
+            audio39.pause()
+            break
+
+            case 74:
+            document.getElementById("alphaJ").style.backgroundColor= "white"
+            document.getElementById("alphaJ").style.boxShadow="0 8px 0px 0 rgba(45, 47, 43, 0.588)"
+            document.getElementById("alphaJ").style.border ="none"
+            audio40.pause()
+            break
+            case 75:
+            document.getElementById("alphaK").style.backgroundColor= "white"
+            document.getElementById("alphaK").style.boxShadow="0 8px 0px 0 rgba(45, 47, 43, 0.588)"
+            document.getElementById("alphaK").style.border ="none"
+            audio41.pause()
+            break;
+            case 76:
+            document.getElementById("alphaL").style.backgroundColor= "white"
+            document.getElementById("alphaL").style.boxShadow="0 8px 0px 0 rgba(45, 47, 43, 0.588)"
+            document.getElementById("alphaL").style.border ="none"
+            audio42.pause()
+            break
+            case 186:
+            document.getElementById("charFour").style.backgroundColor= "white"
+            document.getElementById("charFour").style.boxShadow="0 8px 0px 0 rgba(45, 47, 43, 0.588)"
+            document.getElementById("charFour").style.border ="none"
+            audio43.pause()
+            break
+            case 222:
+            document.getElementById("charFive").style.backgroundColor= "white"
+            document.getElementById("charFive").style.boxShadow="0 8px 0px 0 rgba(45, 47, 43, 0.588)"
+            document.getElementById("charFive").style.border ="none"
+            audio44.pause()
+            break
+            case 90:
+            document.getElementById("alphaZ").style.backgroundColor= "white"
+            document.getElementById("alphaZ").style.boxShadow="0 8px 0px 0 rgba(45, 47, 43, 0.588)"
+            document.getElementById("alphaZ").style.border ="none"
+            audio45.pause()
+            break
+            case 88:
+            document.getElementById("alphaX").style.backgroundColor= "white"
+            document.getElementById("alphaX").style.boxShadow="0 8px 0px 0 rgba(45, 47, 43, 0.588)"
+            document.getElementById("alphaX").style.border ="none"
+            audio46.pause()
+            break
+            case 67:
+            document.getElementById("alphaC").style.backgroundColor= "white"
+            document.getElementById("alphaC").style.boxShadow="0 8px 0px 0 rgba(45, 47, 43, 0.588)"
+            document.getElementById("alphaC").style.border ="none"
+            audio47.pause()
+            break
+            case 86:
+            document.getElementById("alphaV").style.backgroundColor= "white"
+            document.getElementById("alphaV").style.boxShadow="0 8px 0px 0 rgba(45, 47, 43, 0.588)"
+            document.getElementById("alphaV").style.border ="none"
+            audio48.pause()
+            break
+            case 66:
+            document.getElementById("alphaB").style.backgroundColor= "white"
+            document.getElementById("alphaB").style.boxShadow="0 8px 0px 0 rgba(45, 47, 43, 0.588)"
+            document.getElementById("alphaB").style.border ="none"
+            audio49.pause()
+            break
+            case 78:
+            document.getElementById("alphaN").style.backgroundColor= "white"
+            document.getElementById("alphaN").style.boxShadow="0 8px 0px 0 rgba(45, 47, 43, 0.588)"
+            document.getElementById("alphaN").style.border ="none"
+            audio50.pause()
+            break
+            case 77:
+            document.getElementById("alphaM").style.backgroundColor= "white"
+            document.getElementById("alphaM").style.boxShadow="0 8px 0px 0 rgba(45, 47, 43, 0.588)"
+            document.getElementById("alphaM").style.border ="none"
+            audio51.pause()
+            break
+            case 188:
+            document.getElementById("lessthan").style.backgroundColor= "white"
+            document.getElementById("lessthan").style.boxShadow="0 8px 0px 0 rgba(45, 47, 43, 0.588)"
+            document.getElementById("lessthan").style.border ="none"
+            audio52.pause()
+            break
+            case 190:
+            document.getElementById("greatthan").style.backgroundColor= "white"
+            document.getElementById("greatthan").style.boxShadow="0 8px 0px 0 rgba(45, 47, 43, 0.588)"
+            document.getElementById("greatthan").style.border ="none"
+            audio53.pause()
+            break
+            case 191:
+            document.getElementById("charSix").style.backgroundColor= "white"
+            document.getElementById("charSix").style.boxShadow="0 8px 0px 0 rgba(45, 47, 43, 0.588)"
+            document.getElementById("charSix").style.border ="none"
+            audio54.pause()
+            break;
+        }  
+    }); 
+</script>
+</body>
+</html>
